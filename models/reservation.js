@@ -1,5 +1,4 @@
 /** Reservation for Lunchly */
-
 const moment = require("moment");
 
 const db = require("../db");
@@ -38,6 +37,8 @@ class Reservation {
 
     return results.rows.map(row => new Reservation(row));
   }
+
+
 }
 
 
